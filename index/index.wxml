@@ -4,7 +4,7 @@
 			latitude = "{{latitude}}"
 			longitude = "{{longitude}}"
 			markers = "{{markers}}"
-			covers = "{{covers}}"
+			show-compass="{{compass}}"
 			show-location
 	></map>
 	<cover-view class = "btn-area">

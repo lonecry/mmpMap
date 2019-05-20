@@ -3,23 +3,26 @@ Page({
     data: {
         // latitude  : 31.259616,
         // longitude : 100.13026,
-        latitude: 30.1533191645,
-        longitude: 120.2591371536,
-        addr: '请选择位置',
+        latitude: 30.2286664319,
+        longitude: 120.2359199524,
+        compass: true,
         markers: [
             {
                 id: 1,
-                latitude: 30.1533191645,
-                longitude: 120.2591371536,
-                name: 'T.I.T 创意园'
+                latitude: 30.2286664319,
+                longitude: 120.2359199524,
+                iconPath: '/image/location.png',
+                name: 'T.I.T 创意园',
             }
         ],
-        covers: [
+        destination: [
             {
-                latitude: 30.1533191645,
-                longitude: 120.2591371536,
-                iconPath: '/image/location.png'
-            },
+                latitude: 30.2286664319,
+                longitude: 120.2359199524,
+                name: "杭州奥体博览城",
+                address: "中国浙江省杭州市萧山区博奥路",
+                scale: 18
+            }
         ],
         permission: false
     },
@@ -32,19 +35,13 @@ Page({
     moveToLocation: function (){
         this.mapCtx.moveToLocation()
     },
-    gogogo: function (){
+    gogogo: function (k){
         // wx.vibrateShort()
         var _this = this
         app.getPermission(_this).then(//传入that值可以在app.js页面直接设置内容
-           function (_this){
-               wx.openLocation({ //所以这里会显示你当前的位置
-                   latitude: 30.1533191645,
-                   longitude: 120.2591371536,
-                   name: "杭州市",
-                   address: "萧山崇化",
-                   scale: 28
-               })
-           }
+            function (){
+                wx.openLocation(_this.data.destination[0])
+            }
         );
     },
 })
