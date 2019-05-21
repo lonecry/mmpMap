@@ -1,0 +1,2 @@
+<!--pages/index/index.wxml-->
+<view class = "btn" bindtap="forNav">去浙江工商大学</view>
