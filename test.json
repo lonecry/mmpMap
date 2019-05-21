@@ -1,0 +1,34 @@
+{
+  "data": [
+    {
+      "type": "lists",
+      "Nid": 1,
+      "data": [
+        {
+          "placeID": "1",
+          "Place": "美食+品牌区",
+          "PlaceImg": "https://hd.xmountguan.com/omf/image/danmu.jpg",
+          "Intro": "......"
+        },
+        {
+          "placeID": "2",
+          "Place": "美食+品牌区",
+          "PlaceImg": "https://hd.xmountguan.com/omf/image/danmu.jpg",
+          "Intro": "......"
+        }
+      ]
+    },
+    {
+      "type": "single",
+      "Nid": 2,
+      "data": [
+        {
+          "placeID": "1",
+          "Place": "美食+品牌区",
+          "PlaceImg": "https://hd.xmountguan.com/omf/image/danmu.jpg",
+          "Intro": "......"
+        }
+      ]
+    }
+  ]
+}
